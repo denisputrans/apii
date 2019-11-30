@@ -1,19 +1,19 @@
 import http from "./http.js";
 
 // 获取下注记录
-export const betRecords = params => http.get('http://188.225.73.246/eiffelTowerBackend/betRecords', params);
+export const betRecords = params => http.get('https://www.tronoscar.pro/eiffelTowerBackend/betRecords', params);
 
 // 获取个人下注记录
-export const myBets = params => http.get('http://188.225.73.246/eiffelTowerBackend/myBets', params);
+export const myBets = params => http.get('https://www.tronoscar.pro/eiffelTowerBackend/myBets', params);
 
 // 获取当前游戏下注情况
-export const getBetting = params => http.get('http://188.225.73.246/ringBackend/getBetting', params);
+export const getBetting = params => http.get('https://www.tronoscar.pro/ringBackend/getBetting', params);
 
 // 获取直播列表
 export const getRoomList = params => http.postFormData('/room/page', params);
 
 // 获取历史记录
-export const getHistory = params => http.get('http://188.225.73.246/ringBackend/getHistory?Count=16', params);
+export const getHistory = params => http.get('https://www.tronoscar.pro/ringBackend/getHistory?Count=16', params);
 
 // 获取卡牌排序列表
 export const getRing = params => http.postFormData('ringBackend/getRing', params);
@@ -37,70 +37,70 @@ export const getLastTime = params => http.postFormData('ringBackend/getLastRound
 export const getUserLotteryDetail = params => http.postFormData('ringBackend/getUserLotteryDetail'+'?pAddr='+params.pAddr, params);
 
 //0424 shif 获取聊天历史记录30
-export const getChatHistory = params => http.get('http://188.225.73.246/ringBackend/getChatHistory?Count=30',params);
+export const getChatHistory = params => http.get('https://www.tronoscar.pro/ringBackend/getChatHistory?Count=30',params);
 
 
 // 倒计时
-export const getNextDividendTime = params => http.get('http://188.225.73.246/backend/getNextDividendTime', params);
+export const getNextDividendTime = params => http.get('https://www.tronoscar.pro/backend/getNextDividendTime', params);
 
 //总分红
-export const getShareAmtTotal = params => http.get('http://188.225.73.246/backend/getShareAmtTotal', params);
+export const getShareAmtTotal = params => http.get('https://www.tronoscar.pro/backend/getShareAmtTotal', params);
 
 //周成交额排行榜
-export const getWeeklyAmountTop = params => http.get('http://188.225.73.246/backend/getWeeklyAmountTop', params);
+export const getWeeklyAmountTop = params => http.get('https://www.tronoscar.pro/backend/getWeeklyAmountTop', params);
 
 //周成交额排行榜
-export const getInviteTopList = params => http.get('http://188.225.73.246/backend/getInviteTop'+'?Count='+params.Count, params);
+export const getInviteTopList = params => http.get('https://www.tronoscar.pro/backend/getInviteTop'+'?Count='+params.Count, params);
 
-export const getPrizeRecords = params => http.get('http://188.225.73.246/backend/prizeRecords', params);
+export const getPrizeRecords = params => http.get('https://www.tronoscar.pro/backend/prizeRecords', params);
 
-export const getMyPrizes = params => http.get('http://188.225.73.246/backend/myPrizes', params);
+export const getMyPrizes = params => http.get('https://www.tronoscar.pro/backend/myPrizes', params);
 
-export const withdrawPrizes = params => http.get('http://188.225.73.246/backend/withdraw', params);
+export const withdrawPrizes = params => http.get('https://www.tronoscar.pro/backend/withdraw', params);
 
-export const getInviteTopEndTime = params => http.get('http://188.225.73.246/backend/getInviteTopEndTime', params);
+export const getInviteTopEndTime = params => http.get('https://www.tronoscar.pro/backend/getInviteTopEndTime', params);
 
-export const getInviteTop = params => http.get('http://188.225.73.246/backend/getInviteTop', params);
+export const getInviteTop = params => http.get('https://www.tronoscar.pro/backend/getInviteTop', params);
 
-export const getVerifyRandom = params => http.get('http://188.225.73.246/backend/verifyRandom', params);
+export const getVerifyRandom = params => http.get('https://www.tronoscar.pro/backend/verifyRandom', params);
 
-export const ringGetVerifyRandom = params => http.get('http://188.225.73.246/ringBackend/verifyRandom', params);
+export const ringGetVerifyRandom = params => http.get('https://www.tronoscar.pro/ringBackend/verifyRandom', params);
 
-export const diceGetVerifyRandom = params => http.get('http://188.225.73.246/backend/verifyRandom', params);
+export const diceGetVerifyRandom = params => http.get('https://www.tronoscar.pro/backend/verifyRandom', params);
 
-export const getMyBetList = params => http.get('http://188.225.73.246/backend/myBets', params);
+export const getMyBetList = params => http.get('https://www.tronoscar.pro/backend/myBets', params);
 
-export const getBetRecordList = params => http.get('http://188.225.73.246/backend/betRecords' + '?Count=' + params.Count, params);
-
-
-export const getBannerPC = params => http.get('http://188.225.73.246/backend/getBannerPC', params);
+export const getBetRecordList = params => http.get('https://www.tronoscar.pro/backend/betRecords' + '?Count=' + params.Count, params);
 
 
+export const getBannerPC = params => http.get('https://www.tronoscar.pro/backend/getBannerPC', params);
 
-export const getBannerList = params => http.get('http://188.225.73.246/backend/getBanner', params);
+
+
+export const getBannerList = params => http.get('https://www.tronoscar.pro/backend/getBanner', params);
 
 /* 邀請人活動接口 shif 05-30 */
 
 /* 获取邀请人活动基本信息 */
-export const getInviteTopInfo = params => http.get('http://188.225.73.246/backend/getInviteTopInfo', params);
+export const getInviteTopInfo = params => http.get('https://www.tronoscar.pro/backend/getInviteTopInfo', params);
 
 /* 获取邀请人活动排行榜 */
-export const getInviteTopYqr = params => http.get('http://188.225.73.246/backend/getInviteTop'+ '?Count=5', params);
+export const getInviteTopYqr = params => http.get('https://www.tronoscar.pro/backend/getInviteTop'+ '?Count=5', params);
 
 /* 获取邀请人活动 我的邀请详情 */
-export const getMyInviteTop = params => http.get('http://188.225.73.246/backend/getMyInviteTop', params);
+export const getMyInviteTop = params => http.get('https://www.tronoscar.pro/backend/getMyInviteTop', params);
 
 /* 郵箱對接 0531 shif 发送验证码*/
-export const bindEmail = params => http.get('http://188.225.73.246/eiffelTowerBackend/bindEmail', params);
+export const bindEmail = params => http.get('https://www.tronoscar.pro/eiffelTowerBackend/bindEmail', params);
 
 
 /* 郵箱對接 0531 shif 验证 */
-export const validateEmail = params => http.get('http://188.225.73.246/eiffelTowerBackend/validateEmail', params);
+export const validateEmail = params => http.get('https://www.tronoscar.pro/eiffelTowerBackend/validateEmail', params);
 
-export const getPrizePot = params => http.get('http://188.225.73.246/backend/getPrizePot', params);
+export const getPrizePot = params => http.get('https://www.tronoscar.pro/backend/getPrizePot', params);
 
 /* 邮箱信息 */
-export const getUserEmailInfo = params => http.get('http://188.225.73.246/eiffelTowerBackend/getUserEmailInfo', params);
+export const getUserEmailInfo = params => http.get('https://www.tronoscar.pro/eiffelTowerBackend/getUserEmailInfo', params);
 
 /* 多动奖励 */
-export const getOdinPrize = params => http.get('http://188.225.73.246/eiffelTowerBackend/getOdinPrize', params);
+export const getOdinPrize = params => http.get('https://www.tronoscar.pro/eiffelTowerBackend/getOdinPrize', params);
